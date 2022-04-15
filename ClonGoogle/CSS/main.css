@@ -120,29 +120,46 @@ main .main-buttons p{
     margin-top: 35px;
 }
 footer {
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
 }
 footer .nav--footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+}
+.footer--p{
     display: flex;
-    justify-content: space-between;
+    margin: 10px;
+    padding: 0 15px;
+    color: #5f6368;
 }
 footer .nav--footer--left ul{
+    margin: 10px;
     display: flex;
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
-footer .nav--footer--left a{
-    margin-left: 10px;
+footer .nav--footer--left {
+    justify-self: left;
 }
+
 footer .nav--footer--right ul{
+    margin: 10px;
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
-footer .nav--footer--right a{
-    margin-right: 10px;
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
+footer .nav--footer--right {
+    justify-self: right;
 }
